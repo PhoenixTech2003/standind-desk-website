@@ -87,10 +87,11 @@ body{
 
 /*style rules for special offers section */
 .special-offers{
-    padding: 15px;
+    padding: 20px;
     display: grid;
+    column-gap: 15px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 2fr;
+    
 }
 
 .special-offers > h2{
@@ -98,6 +99,83 @@ body{
     grid-column: 1 / 5 ;
 }
 
+/* style rules for product card*/
+.special-offers .product-card{
+    display: grid;
+    padding: 30px;
+    grid-template-rows: 2fr 0.2fr 0.5fr 0.5fr;
+    height: 400px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px rgb(187, 187, 187);
+}
 
+.special-offers .product-card .product-image{
+    display: flex;
+    align-items: center;
+    
+}
+
+.special-offers .product-card:nth-child(2) .product-image{
+    background-image: url("../img/standing-desk-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.special-offers .product-card:nth-child(3) .product-image{
+    background-image: url("../img/standing-desk-3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.special-offers .product-card:nth-child(4) .product-image{
+    background-image: url("../img/standing-desk-4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.special-offers .product-card:nth-child(5) .product-image{
+    background-image: url("../img/standing-desk-5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.special-offers .product-card .product-image .tag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0,0.5);
+    color: var(--text-color);
+    font-weight: 700;
+    flex: 1;
+    height: 20px;
+    
+}
+
+.special-offers .product-card .rating img{ 
+    width: 20px; 
+}
+
+.special-offers .product-card .rating { 
+    justify-self: center;
+}
+
+.special-offers .product-card p{
+    color: var(--text-color);
+    justify-self: center;
+    font-size: 2rem;
+}
+
+.special-offers .product-card button{
+    border: 3px solid white;
+    background-color: black;
+    color: var(--text-color);
+    border-radius: 15px;
+    font-weight: 900;
+}
 
 
