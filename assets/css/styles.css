@@ -85,16 +85,18 @@ body{
     
 }
 
-/*style rules for special offers section */
-.special-offers{
+/*style rules for special offers section and rising desk section*/
+.special-offers,
+.rising-desks{
     padding: 20px;
     display: grid;
-    column-gap: 15px;
+    gap: 15px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     
 }
 
-.special-offers > h2{
+.special-offers > h2,
+.rising-desks > h2{
     justify-self: center;
     grid-column: 1 / 5 ;
 }
@@ -178,4 +180,109 @@ body{
     font-weight: 900;
 }
 
+/*rising desks section*/
+.rising-desks .product-card{
+    display: grid;
+    padding: 30px;
+    grid-template-rows: 2fr 0.2fr 0.5fr 0.5fr;
+    height: 400px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px rgb(187, 187, 187);
+}
+
+.rising-desks .product-card .product-image{
+    display: flex;
+    align-items: center;
+    
+}
+
+.rising-desks .product-card:nth-child(2) .product-image{
+    background-image: url("../img/standing-desk-6.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.rising-desks .product-card:nth-child(3) .product-image{
+    background-image: url("../img/standing-desk-7.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.rising-desks .product-card:nth-child(4) .product-image{
+    background-image: url("../img/standing-desk-8.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.rising-desks .product-card:nth-child(5) .product-image{
+    background-image: url("../img/standing-desk-9.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.rising-desks .product-card:nth-child(6) .product-image{
+    background-image: url("../img/standing-desk-10.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.rising-desks .product-card:nth-child(7) .product-image{
+    background-image: url("../img/standing-desk-11.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.rising-desks .product-card:nth-child(8) .product-image{
+    background-image: url("../img/standing-desk-12.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.rising-desks .product-card:nth-child(9) .product-image{
+    background-image: url("../img/standing-desk-13.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.rising-desks .product-card .product-image .tag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0,0.5);
+    color: var(--text-color);
+    font-weight: 700;
+    flex: 1;
+    height: 20px;
+    
+}
+
+.rising-desks .product-card .rating img{ 
+    width: 20px; 
+}
+
+.rising-desks .product-card .rating { 
+    justify-self: center;
+}
+
+.rising-desks .product-card p{
+    color: var(--text-color);
+    justify-self: center;
+    font-size: 2rem;
+}
+
+.rising-desks .product-card button{
+    border: 3px solid white;
+    background-color: black;
+    color: var(--text-color);
+    border-radius: 15px;
+    font-weight: 900;
+}
 
