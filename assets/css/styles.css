@@ -3,3 +3,47 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root{
+    --body-color:#E3E3E3;
+    --text-color:white;
+    --nav-color:black;
+}
+
+body{
+    background-color: var(--body-color);
+    font-family: 'Courier New', Courier, monospace;
+}
+/* style rules for navigation bar and logo*/
+.nav{
+    display: flex;
+    background-color: black;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.nav ul{
+    display: flex;
+    gap: 100px;
+}
+
+.nav ul li,
+.nav ul li a
+{
+    color: var(--text-color);
+    text-decoration: none;
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 700;
+    
+}
+
+
+.nav .logo{
+    color: var(--text-color);
+    font-size: 2rem;
+    font-weight: 900;
+}
+
