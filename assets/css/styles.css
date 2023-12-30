@@ -48,6 +48,7 @@ body{
 }
 
 /*style rules for hero */
+
 .hero
 {
     display: grid;
@@ -83,5 +84,20 @@ body{
     border-radius: 10px;
     
 }
+
+/*style rules for special offers section */
+.special-offers{
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+}
+
+.special-offers > h2{
+    justify-self: center;
+    grid-column: 1 / 5 ;
+}
+
+
 
 
