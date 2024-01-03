@@ -21,6 +21,9 @@ body{
     padding: 15px;
     justify-content: space-around;
     align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100vw;
     
 }
 
@@ -52,6 +55,7 @@ body{
 .hero
 {
     display: grid;
+    margin-top: 65px;
     grid-template-columns: 1fr 1fr;
     padding: 20px;
     background-color: rgba(0, 0, 0,0.3);
@@ -352,6 +356,7 @@ body{
 .form-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 65px;
 }
 
 .form-container .form-picture{
@@ -409,4 +414,104 @@ body{
     font-weight: 900;
 }
 
+/* rising desks product item */
+.product-item{
+    margin: 100px;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding:20px;
+    display: grid;
+    column-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.product-item:nth-child(2) .item-image{
+    background-image: url("../img/standing-desk-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.product-item:nth-child(3) .item-image{
+    background-image: url("../img/standing-desk-3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.product-item:nth-child(4) .item-image{
+    background-image: url("../img/standing-desk-4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.product-item:nth-child(5) .item-image{
+    background-image: url("../img/standing-desk-5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.product-item:nth-child(6) .item-image{
+    background-image: url("../img/standing-desk-6.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.product-item:nth-child(7) .item-image{
+    background-image: url("../img/standing-desk-7.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.product-item:nth-child(8) .item-image{
+    background-image: url("../img/standing-desk-8.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.product-item:nth-child(9) .item-image{
+    background-image: url("../img/standing-desk-9.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.product-item:nth-child(10) .item-image{
+    background-image: url("../img/standing-desk-10.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.product-item:nth-child(11) .item-image{
+    background-image: url("../img/standing-desk-11.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.product-item:nth-child(12) .item-image{
+    background-image: url("../img/standing-desk-12.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.product-item:nth-child(13) .item-image{
+    background-image: url("../img/standing-desk-13.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.product-item .product-description-container .rating img{
+    width: 20px;
+    padding: 1px;
+    background-color: black;
+    border-radius: 20px;
+}
+.product-item .product-description-container button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--body-color);
+    border: 3px solid black;
+    font-weight: 900;
+    border-radius: 20px;
+}
 
