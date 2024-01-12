@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Standing Desks LTD</title>
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
       <!--NAVIGATION BAR-->
@@ -14,9 +15,53 @@
             <li><a href="./rising-desks.html">Rising Desks</a></li>
             <li><a href="./contact-us.html">Contact Us</a></li>
             <li><a href="./health-benefits.html">Health Benefits</a></li>
-            <li><a href="">Basket</a></li>
+            <li><a href="./basket.html">Basket</a></li>
         </ul>
     </div>
+    <div class="product-table">
+        <div class="table-header">
+            <h4>PRODUCT</h4>
+            <h4>QUANTITY</h4>
+            <h4>PRICE</h4>
+        </div>
+        <div class="table-content">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <h2>TOTAL: $1200</h2>
+    </div>
+
+    <form class="payment-form" action="">
+        <h2>PAYMENT DETAILS</h2>
+        <div class="cardholder-information details">
+            <h3>CARDHOLDER INFORMATION</h3>
+    
+            <label for="fullname">FULLNAME(as it appears on the card)</label>
+            <input type="text" id="fullname">
+    
+    
+            <label for="email">EMAIL</label>
+            <input type="email" id="email">
+
+        </div>
+
+        <div class="card-details details">
+            <h3>CARD DETAILS</h3>
+            <label for="card-type">CARD TYPE</label>
+            <select name="card-type" id="card-type">
+                <option value="Visa">VISA</option>
+                <option value="Master-Card">MasterCard</option>
+                <option value="American-Express">American Express</option>
+            </select>
+            <label for="card-number">CARD NUMBER</label>
+            <input type="text" id="card-number">
+            <label for="expiration-date">EXPIRATION DATE</label>
+            <input type="date" name="" id="expiration-date">
+        </div>
+        <button>SUBMIT</button>
+
+    </form>
 
      <!--footer section-->
      <div class="footer">
