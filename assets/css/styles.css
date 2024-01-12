@@ -515,3 +515,32 @@ body{
     border-radius: 20px;
 }
 
+/*Health benefits section*/
+.health-benefits-container{
+    margin: 100px;
+}
+
+.health-benefits-container ol p {
+    margin-bottom: 20px;
+}
+
+.health-benefits-container ol > li {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.bottom-line-container{
+    display: grid;
+    grid-template-columns: 0.01fr 1fr;
+    margin: 50px;
+    background-color: whitesmoke;
+}
+
+.bottom-line-container div:nth-child(1){
+    background-color: black;
+    width: 4px;
+}
+
+.bottom-line-container div:nth-child(2){
+    padding: 30px;
+}
