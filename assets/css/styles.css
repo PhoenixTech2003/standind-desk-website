@@ -49,6 +49,55 @@ body{
     font-size: 2rem;
     font-weight: 900;
 }
+
+/*style rules for drop down menu*/
+.nav ul li:nth-child(6){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav ul li:nth-child(6) p{
+    display: flex;
+    align-items: center;
+}
+
+.nav ul li:nth-child(6) img{
+    width: 20px;
+}
+
+.nav ul li:nth-child(6) ul li{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+
+.nav ul li ul.sub-menu{
+    position: absolute;
+    margin-top: 20px;
+    display: flex;
+    visibility: hidden;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    background-color: black;
+    
+}
+
+.nav ul li:hover ul.sub-menu{
+    visibility: visible;
+    background-color: black;
+}
+
+
+
+
+
+
+
 /* style rules for modal pop up*/
 
 .modal{
@@ -56,6 +105,12 @@ body{
     top: 50%;
     left: 50%;
     translate: -50% -50%;
+    border: none;
+    border-radius: 10px;
+}
+
+.modal::backdrop{
+    background-color:rgba(19, 19, 19, 0.5);
 }
 
 .modal button{
